@@ -1,0 +1,260 @@
+@font-face {
+    font-family: Source Sans Pro;
+    src: url(fonts/SourceSansPro-Regular.otf);
+}
+
+body,
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* header and hero section background  */
+header,
+.hero {
+    background-image: url(../images/background.png);
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Source Sans Pro;
+}
+
+/* header styles */
+
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    list-style: none;
+}
+
+.NavLink a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* main section styles */
+.register {
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.register h1 {
+    margin-top: 0px;
+    text-align: center;
+    margin: 0 auto 1% auto;
+    font-size: 400%;
+}
+
+.register button {
+    display: block;
+    margin: 3% auto;
+
+    color: #FFFFFF;
+    background-color: #C271FF;
+    border: none;
+    width: 162px;
+    height: 44px;
+    border-radius: 40px;
+    box-shadow: 3px 3px rgb(68, 65, 65);
+}
+
+.register span {
+    margin: 3%;
+}
+
+.ProsContainer {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 14%;
+    padding-bottom: 5%;
+    font-weight: unset;
+}
+
+.ProsContainer span {
+    color: #C271FF;
+}
+
+.Pros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4% 12%;
+}
+
+/* testimonials */
+.first-testimonial {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10%;
+    gap: 5%;
+    background-color: #C271FF;
+    color: #FFFFFF;
+}
+
+.quote {
+    padding: 3%;
+    padding-left: 0;
+}
+
+blockquote {
+    margin: 0;
+}
+
+.first-testimonial .image-container {
+    justify-self: end;
+}
+
+/* Popular tutorials */
+
+.tutorials-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 8%;
+    gap: 2%;
+}
+
+.tutorials-container .item1 {
+    grid-column: 1/-1;
+    /*span across all four columns */
+    text-align: center;
+}
+
+.tutorials-container .phillip {
+    display: flex;
+    align-items: center;
+    color: hsl(274, 100%, 72%);
+    gap: 1em
+}
+
+.tutorials-container .rating {
+    display: flex;
+    justify-content: start;
+}
+
+.tutorials-container .rating i {
+    color: #C271FF;
+    display: inline;
+    margin: 0;
+}
+
+.tutorials-container .rating .last {
+    color: rgb(146, 140, 140);
+}
+
+.tutorials-container .phillip img {
+    width: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+}
+
+.tutorials-container .time {
+    padding-right: 12%;
+}
+
+.tutorials-container span {
+    color: #C271FF;
+}
+
+.tutorials-container .rating-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* membership */
+.membership {
+    background-color: #071629;
+    padding: 5em 8em 3em 8em;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Source Sans Pro;
+}
+
+.membership-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.membership h2 {
+    margin: 0 0 5% 0;
+}
+
+.membership span {
+    color: #C271FF;
+}
+
+.membership button {
+    background-color: #C271FF;
+    color: #FFFFFF;
+    border: none;
+    width: 12em;
+    height: 4em;
+    border-radius: 50px;
+    margin: 4em auto 0 auto;
+}
+
+/* faq */
+.faq {
+    margin: 2em 12em;
+    font-family: Source Sans Pro;
+}
+
+.faq .faqs-container {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+/* footer */
+footer section {
+    display: flex;
+    flex-direction: column;
+    background-color: #071629;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+footer .logo-socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 4em auto 2em auto;
+}
+
+footer .trademark {
+    opacity: 35%;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+}
