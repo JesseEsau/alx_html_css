@@ -134,7 +134,6 @@ blockquote {
 
 .tutorials-container .item1 {
     grid-column: 1/-1;
-    /*span across all four columns */
     text-align: center;
 }
 
@@ -142,12 +141,13 @@ blockquote {
     display: flex;
     align-items: center;
     color: hsl(274, 100%, 72%);
-    gap: 1em
+    gap: 1em;
 }
 
 .tutorials-container .rating {
     display: flex;
     justify-content: start;
+
 }
 
 .tutorials-container .rating i {
