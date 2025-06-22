@@ -1,0 +1,251 @@
+:root {
+    --orange-color: #FF6565;
+    --white-color: #FFFFFF;
+    --darkblue-color: #071629;
+    --black-color: #000000;
+}
+
+/* Basic Reset */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover,
+a:active {
+    color: var(--orange-color);
+}
+
+button:hover,
+button:active {
+    opacity: 0.9;
+}
+
+.header-hero {
+    background-image: url("images/background-hero.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+.link-wrapper {
+    display: none;
+}
+
+header {
+    margin: auto;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    max-width: 50rem;
+}
+
+header .logo {
+    max-width: 8rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    header .logo {
+        max-width: 14rem;
+    }
+
+    .wrapper {
+        margin: auto;
+    }
+
+    .link-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* hero */
+.hero {
+    text-align: center;
+}
+
+.hero-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10rem;
+    max-width: 95%;
+    padding-bottom: 5rem;
+    /* margin: auto; */
+}
+
+.hero-wrapper h1 {
+    margin-bottom: 0;
+    max-width: 70%;
+}
+
+.hero-wrapper .btn {
+    color: var(--white-color);
+    background-color: var(--orange-color);
+    border: none;
+    padding: 1rem 2rem;
+    margin: 1rem auto 2rem auto;
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+    .hero-wrapper {
+        padding-top: 16rem;
+        max-width: 50%;
+    }
+}
+
+
+/* what we do */
+.what-we-do {
+    background-color: var(--white-color);
+    text-align: center;
+    color: var(--black-color);
+    margin: auto;
+}
+
+.what-we-do .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+    margin: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.what-we-do .icons {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    margin: 2rem;
+    margin-bottom: 0;
+}
+
+@media (min-width:768px) {
+    .what-we-do .wrapper {
+        margin: 10rem;
+        margin-top: 8rem;
+        margin-bottom: 0;
+    }
+
+    .what-we-do .icons {
+        grid-template-columns: 50% 50%;
+        margin: 4rem;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .what-we-do .description {
+        max-width: 60%;
+        margin: auto;
+    }
+
+    .what-we-do .wrapper {
+        margin: 6rem;
+        margin-bottom: 0;
+        gap: 4rem;
+
+    }
+
+    .what-we-do .icons {
+        grid-template-columns: 25% 25% 25% 25%;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+}
+
+/* results */
+.results {
+    background-image: url("images/background2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.results .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+
+.results .result-items {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1rem;
+}
+
+.results .result-percent {
+    background-color: var(--orange-color);
+    position: relative;
+    width: 14rem;
+    height: max-content;
+    margin: auto;
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+}
+
+@media (min-width: 768px) {
+    .results .description {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .results .wrapper {
+        gap: 4rem;
+        padding: 4rem;
+        padding-top: 6rem;
+    }
+
+    .results .result-items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 4rem;
+
+    }
+
+}
+
+@media (min-width:100px) {
+    .results .result-percent {
+        width: 8rem;
+    }
+
+    .results .result-items {
+        grid-template-columns: 20% 20% 20% 20%;
+        margin: auto;
+    }
+}
